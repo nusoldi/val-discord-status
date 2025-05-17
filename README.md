@@ -2,6 +2,8 @@
 
 Simple Python package that fetches comprehensive status and performance metrics for a Solana validator and sends a formatted report to a Discord channel via a webhook. It can be configured to monitor validators on different clusters (e.g., Mainnet, Testnet) and can be automated using systemd services.
 
+![image](https://github.com/user-attachments/assets/acbc94b8-8d9b-4fde-a3fe-93ce08c6a931)
+
 ## Table of Contents
 
 - [About The Project](#about-the-project)
