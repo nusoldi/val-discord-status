@@ -1,0 +1,28 @@
+[discord]
+webhook_url = ""
+
+[validator]
+identity_um = "THWsLPufeq9LWs2H9vYPbtFwdxAHbQHvSbT6pztG8x1"
+identity_ut = "THWn57216Xoen7wQ74j2RxcqUt3CMpaGaUvzo1kZdC1"
+
+[rpc_urls]
+urls_um = [
+        "https://api.mainnet-beta.solana.com",
+        "https://solana-rpc.publicnode.com",
+]
+
+urls_ut = [
+        "https://api.testnet.solana.com",
+        "https://solana-testnet-rpc.publicnode.com",
+]
+
+[rpc_settings]
+# Number of additional times to cycle through RPC URLs if all fail in a pass.
+# 0 means only one pass through the list of URLs (no retries).
+# 1 means one initial pass, and if all fail, one more pass (total 2 attempts per URL effectively if list has 1 URL).
+rpc_max_retries = 2 
+# Delay in seconds between retry passes.
+rpc_retry_delay_seconds = 5
+
+[logging]
+log_level = "DEBUG" # Use INFO for basic output or DEBUG for verbose output
